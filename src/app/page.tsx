@@ -8,7 +8,7 @@ import Skills from "@/src/components/Skills";
 
 export default function App() {
   return (
-    <main className="bg-amber-400">
+    <main className="main-container bg-amber-400">
       <Hero />
       <About />
       <Skills />

@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+.main-container {
+  height: calc(100vh - 40px);
+  width: calc(100vw - 40px);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  border-radius: 20px;
+  scrollbar-width: none;
+  -webkit-scrollbar-width: none;
+
+  -webkit-mask-image: url('/shapes/main-container.svg');
+  mask-image: url('/shapes/main-container.svg');
+
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
