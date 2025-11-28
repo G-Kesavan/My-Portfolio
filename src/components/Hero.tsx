@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center min-h-screen py-2"
+      className="flex flex-col items-center justify-center min-h-screen py-2 bg-amber-500"
     >
       <h1 className="text-6xl font-extrabold text-light-blue-600 mb-4">
         Welcome to My Portfolio

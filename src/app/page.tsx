@@ -5,17 +5,23 @@ import Experience from "@/src/components/Experience";
 import Hero from "@/src/components/Hero";
 import Projects from "@/src/components/Projects";
 import Skills from "@/src/components/Skills";
+import Menu from "../components/Menu";
+import Footer from "../components/Footer";
 
 export default function App() {
   return (
-    <main className="main-container bg-amber-400">
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Certifications />
-      <Contact />
-    </main>
+    <>
+      <Menu />
+      <main className="main-container bg-amber-400">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Certifications />
+        <Contact />
+      </main>
+      <Footer/>
+    </>
   );
 }
