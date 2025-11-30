@@ -20,11 +20,7 @@
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-icons": "^5.5.0",
-<<<<<<< HEAD
     "tailwind-merge": "^3.4.0",
-=======
-    "sass": "^1.94.2",
->>>>>>> 2e93cedc310bf979e8ee391141c772d7ae43b873
     "three": "^0.181.2"
   },
   "devDependencies": {
