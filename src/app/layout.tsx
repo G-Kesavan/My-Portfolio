@@ -1,5 +1,5 @@
-import "@/src/styles/globals.css";
-import "@/src/styles/variables.css";
+import "@/styles/globals.css";
+import "@/styles/variables.css";
 
 export default function RootLayout({
   children,

@@ -1,6 +1,6 @@
 export default function Certifications() {
   return (
-    <section id="certifications" className="p-10 bg-amber-100">
+    <section id="certificates" className="md:h-screen h-[200vh] p-8 pt-25 bg-blue-200">
       <h2 className="text-4xl font-bold text-light-blue-600 mb-6">
         Certifications
       </h2>

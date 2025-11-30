@@ -1,21 +1,21 @@
-import About from "@/src/components/About";
-import Certifications from "@/src/components/Certifications";
-import Contact from "@/src/components/Contact";
-import Experience from "@/src/components/Experience";
-import Hero from "@/src/components/Hero";
-import Projects from "@/src/components/Projects";
-import Skills from "@/src/components/Skills";
+import About from "@/components/About/About";
+import Certifications from "@/components/Certifications/Certifications";
+import Contact from "@/components/Contacts/Contact";
+import Hero from "@/components/Hero/Hero";
+import Projects from "@/components/Projects/Projects";
+import Navbar from "../components/Navbar/Navbar";
 
 export default function App() {
   return (
-    <main className="main-container bg-amber-400">
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Certifications />
-      <Contact />
-    </main>
+    <>
+      <Navbar />
+      <main className="main-container bg-amber-400">
+        <Hero />
+        <About />
+        <Projects />
+        <Certifications />
+        <Contact />
+      </main>
+    </>
   );
 }

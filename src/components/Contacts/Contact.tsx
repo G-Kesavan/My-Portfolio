@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="p-10 bg-amber-300">
+    <section id="contact" className="md:h-screen h-[200vh] p-8 pt-25 bg-blue-100">
       <h2 className="text-4xl font-bold text-light-blue-600 mb-6">
         Contact Me
       </h2>
