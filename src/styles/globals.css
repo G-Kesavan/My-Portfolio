@@ -125,20 +125,8 @@
   initial-value: 0deg;
 }
 
-@layer utilities {
-  @keyframes spin-slow {
-    to {
-      --angle: -360deg;
-    }
-  }
-}
-
 * {
   scroll-behavior: smooth;
-}
-
-.hover-effect:hover{
-  transform: scale(1.1);
 }
 
 #hero {
@@ -151,36 +139,27 @@
   color: azure;
 }
 
+#projects {
+  background-image: var(--about-bg-color);
+  color: azure;
+}
+
+#certificates {
+  background-image: var(--about-bg-color);
+  color: azure;
+}
+
+#contact {
+  background-image: var(--about-bg-color);
+  color: azure;
+}
+
 nav {
   background-image: var(--bg-color);
   z-index: 1000;
 }
 
-.about-profile {
-  clip-path: polygon(
-    50px 0,
-    calc(100% - 50px) 0,
-    100% 50px,
-    100% calc(100% - 50px),
-    calc(100% - 50px) 100%,
-    50px 100%,
-    0 calc(100% - 50px),
-    0 50px
-  );
-  z-index: 1;
-};
-
-.profile-img {
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 160px),
-    calc(100% - 160px + 40px) calc(100% - 160px + 40px),
-    calc(100% - 160px) 100%,
-    0 100%
-  );
-  z-index: 1;
-};
+/* Navbar start*/
 
 .side-menu {
   clip-path: polygon(
@@ -192,7 +171,65 @@ nav {
     0 80px
   );
   animation: menu-open 0.3s linear;
-};
+}
+
+@keyframes menu-open {
+  0% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Navbar end*/
+
+/* Hero Page start */
+
+.profile-img {
+  clip-path: polygon(
+    0 0,
+    70px 0,
+    0px 70px,
+    0px 85px,
+    85px 0px,
+    100% 0,
+    100% calc(100% - 160px),
+    calc(100% - 160px + 40px) calc(100% - 160px + 40px),
+    calc(100% - 160px) 100%,
+    0 100%
+  );
+  z-index: 1;
+}
+
+.typing-effect {
+  border-right: 5px solid white;
+  padding-right:5px;
+  overflow: hidden;
+  animation: typing 6s steps(18) infinite 3s, cursor 0.5s infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 300px;
+  } 
+  50% {
+    width: 0%;
+  }
+  90% {
+    width: 300px; 
+  }
+  100% {
+    width: 300px;
+  }
+}
+
+@keyframes cursor {
+  100% {
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
 
 .hero-projects {
   clip-path: polygon(46px 8px, calc(100% - 5px) 100%, 7px 100%);
@@ -201,9 +238,9 @@ nav {
   align-items: center;
 }
 
-.hero-projects:hover{
+.hero-projects:hover {
   transform: scale(1.1);
-} 
+}
 
 .hero-resume {
   position: absolute;
@@ -219,6 +256,96 @@ nav {
 .hero-resume:hover {
   transform: rotate(45.5deg) scale(1.1);
 }
+
+/* Hero Page end */
+
+/* About Page start */
+
+.about-profile {
+  clip-path: polygon(
+    50px 0,
+    50px 120px,
+    60px 140px,
+    60px 0px,
+    calc(100% - 60px) 0,
+    calc(100% - 60px) 80px,
+    calc(100% - 50px) 80px,
+    calc(100% - 50px) 0,
+    100% 50px,
+    100% calc(100% - 50px),
+    calc(100% - 50px) 100%,
+    50px 100%,
+    0 calc(100% - 50px),
+    0 50px
+  );
+  z-index: 1;
+  border-radius: 65px;
+}
+
+.spin-effect-about::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  clip-path: polygon(
+    50px 0,
+    calc(100% - 50px) 0,
+    100% 50px,
+    100% calc(100% - 50px),
+    calc(100% - 50px) 100%,
+    50px 100%,
+    0 calc(100% - 50px),
+    0 50px
+  );
+  background: conic-gradient(
+    from var(--angle),
+    #ffffff 10%,
+    #5e5ee8 40%,
+    #6a6af1 60%,
+    #9595eb 90%,
+    #fafafb 100%
+  );
+  right: -5px;
+  top: -5px;
+  border-radius: 68px;
+  animation: spin-slow 3s linear infinite;
+}
+
+/* About Page end */
+
+/* Projects Page start */
+
+.project-img {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 40px),
+    25% calc(100% - 40px),
+    calc(25% - 40px) 100%,
+    0 100%
+  );
+  height: calc(70%);
+}
+
+.project-description {
+  height: calc(30% + 40px);
+  position: absolute;
+}
+
+.project-header {
+  width: calc(75% + 40px);
+  height: 40px;
+  clip-path: polygon(40px 0px, 100% 0px, 100% 100%, 0px 100%);
+  overflow: hidden;
+}
+
+.project-content {
+  height: calc(100% - 40px);
+  overflow: hidden;
+}
+
+/* Projects Page end */
 
 .spin-effect-lg::before {
   content: "";
@@ -248,10 +375,10 @@ nav {
   width: calc(100% + 10px);
   background: conic-gradient(
     from var(--angle),
-    #efefff 10%,
-    #0202c9 30%,
-    #2d2dbf 50%,
-    #5f5fbc 70%,
+    #ffffff 10%,
+    #5e5ee8 40%,
+    #6a6af1 60%,
+    #9595eb 90%,
     #fafafb 100%
   );
   right: -5px;
@@ -260,12 +387,32 @@ nav {
   animation: spin-slow 3s linear infinite;
 }
 
-@keyframes menu-open {
-  0%{
-    transform: translateX(50%);   
-  }
+.hover-effect:hover {
+  transform: scale(1.1);
+}
 
-  100%{
-    transform: translateX(0%);
+.hover-effect-y:hover {
+  transform: scaleY(1.05);
+}
+
+.border-effect {
+  animation: border-eff 3s linear infinite;
+}
+
+@keyframes border-eff {
+  0% {
+    border-color: #ffffff;
+  }
+  50% {
+    border-color: #5353f4;
+  }
+  100% {
+    border-color: #ffffff;
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    --angle: -360deg;
   }
 }

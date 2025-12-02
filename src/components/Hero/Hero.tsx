@@ -27,8 +27,11 @@ export default function Hero() {
         <h2 className="text-3xl flex font-bold items-end justify-center md:justify-start">
           Hi,I&apos;m <span className="text-2xl font-light">&ensp;Kesavan</span>
         </h2>
-        <h1 className="text-4xl font-extrabold flex justify-center md:justify-start flex-wrap">
-          <span className="text-blue-400">Fullstack&ensp;</span>Developer
+        <h1 className="text-4xl font-extrabold flex justify-center md:justify-start flex-wrap text-center">
+          <span className="text-blue-400 typing-effect max-w-fit">
+            Fullstack
+          </span>
+          Developer
         </h1>
         <p className="md:w-[80%] text-blue-200 flex justify-center flex-wrap h-auto">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
@@ -67,6 +70,7 @@ export default function Hero() {
           alt="profile"
           width="100"
           height="100"
+          loading="eager"
           className="h-full w-auto profile-img rounded-3xl"
         />
 

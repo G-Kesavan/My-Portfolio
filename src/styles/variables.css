@@ -2,6 +2,6 @@
 
 :root{
     --bg-color:linear-gradient(90deg,rgb(151, 187, 250),rgb(93, 166, 255),rgb(151, 187, 250));
-    --hero-bg-color:linear-gradient(120deg,rgb(0, 0, 0) ,rgb(22, 37, 169),rgb(144, 175, 244));
-    --about-bg-color:linear-gradient(100deg,rgb(144, 175, 244),rgb(22, 37, 169),rgb(0, 0, 0) );
+    --hero-bg-color:linear-gradient(120deg,rgb(0, 0, 0) ,rgb(50, 70, 244),rgb(144, 175, 244));
+    --about-bg-color:linear-gradient(230deg,rgb(144, 175, 244),rgb(22, 37, 169),rgb(0, 0, 0) );
 }

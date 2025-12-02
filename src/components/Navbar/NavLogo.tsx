@@ -1,3 +1,4 @@
+"use client";
 import { MdPerson } from "react-icons/md";
 
 export default function NavLogo () {

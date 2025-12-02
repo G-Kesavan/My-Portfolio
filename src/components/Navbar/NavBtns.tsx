@@ -1,5 +1,9 @@
+"use client";
+type NavBtnsProps = {
+  setIsMenu: (value: boolean) => void;
+};
 import { MdDownload, MdMenu } from "react-icons/md";
-export default function NavButtons({ setIsMenu }) {
+export default function NavButtons({ setIsMenu }: NavBtnsProps) {
   return (
     <>
       <div className="md:hidden flex bg-blue-500 gap-1 rounded-[20px] text-nowrap">

@@ -1,9 +1,10 @@
 import About from "@/components/About/About";
 import Certifications from "@/components/Certifications/Certifications";
-import Contact from "@/components/Contacts/Contact";
+import Contact from "@/components/Contact/Contact";
 import Hero from "@/components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Certifications />
         <Contact />
       </main>
+      <Footer/>
     </>
   );
 }

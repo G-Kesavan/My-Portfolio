@@ -1,3 +1,4 @@
+"use client";
 export default function NavLink() {
   return (
     <div className="md:flex  hidden gap-4">
