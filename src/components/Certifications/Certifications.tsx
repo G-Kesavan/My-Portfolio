@@ -12,31 +12,31 @@ export default function Certifications() {
   const certificates = [
     {
       name: "CodSoft Intership Web Development",
-      image: "/Images/Certificates/Web_Development.jpg",
+      image: "/Images/certificates/certificate1.png",
       detail:
         "Completed virtual web development internship at CodSoft, gaining hands-on experience in ReactJS, HTML, CSS, JavaScript, and real-world frontend development.",
     },
     {
       name: "WORKSHOP PARTICIPATION",
-      image: "/Images/Certificates/WORKSHOP_PARTICIPATION_CERTIFICATE-1.jpg",
+      image: "/Images/certificates/certificate2.png",
       detail:
         "Attended AI-enhanced web development workshop by Guha Industrial Solutions, learning to integrate AI, Web3, blockchain, and emerging technologies to build modern, intelligent, and decentralized websites.",
     },
     {
       name: "AI Foundations Associate",
-      image: "/Images/Certificates/AI_Foundations_Associate-1.jpg",
+      image: "/Images/certificates/certificate3.png",
       detail:
         "Achieved AI Foundations Associate certification from Oracle, gaining foundational knowledge in artificial intelligence concepts, machine learning algorithms, and real-world AI applications for modern business solutions.",
     },
     {
       name: "Foundations Associate",
-      image: "/Images/Certificates/Foundations_Associate-1.jpg",
+      image: "/images/certificates/certificate4.png",
       detail:
         "Achieved Oracle Foundations Associate certification, gaining a comprehensive understanding of core concepts, tools, and practices essential for building a strong foundation in technology and business solutions.",
     },
     {
       name: "Software Testing",
-      image: "/Images/Certificates/Software_Testing-1.jpg",
+      image: "/Images/certificates/certificate5.png",
       detail:
         "Completed a basic software testing course through Naan Mudhalvan by OpenMentor, gaining introductory knowledge of software quality concepts and fundamental testing principles used in development.",
     },
