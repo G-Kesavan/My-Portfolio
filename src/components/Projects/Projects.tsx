@@ -99,17 +99,17 @@ export default function Projects() {
               key={index}
               className="md:basis-1/1 lg:basis-1/2 h-full"
             >
-              <div className=" rounded-3xl flex flex-col h-[60vh] ] md:h-full relative border-6 border-effect overflow-hidden bg-blue-950">
+              <div className=" rounded-3xl flex flex-col h-[60vh] ] md:h-full relative border-6 border-effect overflow-hidden bg-blue-800">
                 <Image
                   src={project.img}
                   alt={project.title}
                   width={100}
                   height={100}
                   loading="eager"
-                  className=" w-auto object-cover project-img"
+                  className=" w-auto object-cover project-img border-12 border-b-0 rounded-3xl rounded-b"
                 />
                 <div className="project-description absolute bottom-0 left-0 w-full flex flex-col items-center">
-                  <div className="project-header flex items-center justify-between ml-auto bg-blue-950 ">
+                  <div className="project-header flex items-center justify-between ml-auto bg-blue-800 ">
                     <a
                       href={project.code}
                       className="flex items-center ml-12 overflow-auto  text-nowrap mr-3 font-bold"
@@ -125,12 +125,12 @@ export default function Projects() {
                     </a>
                   </div>
 
-                  <div className="project-content bg-blue-950 w-full ">
+                  <div className="project-content bg-blue-800 w-full ">
                     <p className="p-2 pb-0 ml-2 mr-2 line-clamp-3 overflow-hidden font-light">
                       <span className="font-normal">Use Tech : </span>
                       {project.tech}.
                     </p>
-                    <p className="p-2 pb-0 ml-2 mr-2 line-clamp-3 overflow-hidden font-light">
+                    <p className=" ml-4 mr-4 line-clamp-3 overflow-hidden font-light">
                       {project.desc}
                     </p>
                   </div>

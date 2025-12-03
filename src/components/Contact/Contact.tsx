@@ -10,14 +10,17 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+
   const copyFun = (x: string) => {
     const copyText = document.querySelector(`.${x}`)?.textContent;
     navigator.clipboard.writeText(String(copyText));
-    alert(`${x.slice(4).replace('_',' ')} is copyed ✅`);
+    alert(`${x.slice(4).replace("_", " ")} is copyed ✅`);
   };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+
     const res = await fetch("/api/send_message", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -31,6 +34,7 @@ export default function Contact() {
     } else {
       alert("Message failed ❌ Please try again.");
     }
+
     setLoading(false);
   };
 
@@ -52,6 +56,8 @@ export default function Contact() {
           </label>
           <input
             className="w-full p-2 border border-light-blue-400 rounded"
+            id="name"
+            autoComplete="name"
             type="text"
             required
             value={name}
@@ -64,8 +70,10 @@ export default function Contact() {
             Email
           </label>
           <input
+            id="email"
             className="w-full p-2 border border-light-blue-400 rounded"
             type="email"
+            autoComplete="email"
             required
             value={email}
             onChange={(e) => {
@@ -77,7 +85,9 @@ export default function Contact() {
             Message
           </label>
           <textarea
+            id="message"
             className="w-full p-2 border border-light-blue-400 rounded"
+            autoComplete="message"
             value={message}
             required
             onChange={(e) => {
@@ -117,7 +127,10 @@ export default function Contact() {
                 mr.kesavaperumal@gmail.com
               </p>
               <i className="text-neutral-300 hover-effect cursor-pointer">
-                <MdFileCopy size={20} onClick={() => copyFun("copyMail_address")} />
+                <MdFileCopy
+                  size={20}
+                  onClick={() => copyFun("copyMail_address")}
+                />
               </i>
             </li>
             <li className="flex justify-between">
@@ -126,7 +139,10 @@ export default function Contact() {
               </i>
               <p className="copyPhone_Number">+91 63 74 79 02 92</p>
               <i className="text-neutral-300 hover-effect cursor-pointer">
-                <MdFileCopy size={20} onClick={() => copyFun("copyPhone_Number")} />
+                <MdFileCopy
+                  size={20}
+                  onClick={() => copyFun("copyPhone_Number")}
+                />
               </i>
             </li>
             <li className="flex justify-between">
