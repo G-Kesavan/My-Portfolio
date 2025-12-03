@@ -7,9 +7,41 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
-import { FaEye } from "react-icons/fa";
 
 export default function Certifications() {
+  const certificates = [
+    {
+      name: "CodSoft Intership Web Development",
+      image: "/Images/Certificates/Web Development.jpg",
+      detail:
+        "Completed virtual web development internship at CodSoft, gaining hands-on experience in ReactJS, HTML, CSS, JavaScript, and real-world frontend development.",
+    },
+    {
+      name: "WORKSHOP PARTICIPATION",
+      image: "/Images/Certificates/WORKSHOP PARTICIPATION CERTIFICATE-1.jpg",
+      detail:
+        "Attended AI-enhanced web development workshop by Guha Industrial Solutions, learning to integrate AI, Web3, blockchain, and emerging technologies to build modern, intelligent, and decentralized websites.",
+    },
+    {
+      name: "AI Foundations Associate",
+      image: "/Images/Certificates/AI Foundations Associate-1.jpg",
+      detail:
+        "Achieved AI Foundations Associate certification from Oracle, gaining foundational knowledge in artificial intelligence concepts, machine learning algorithms, and real-world AI applications for modern business solutions.",
+    },
+    {
+      name: "Foundations Associate",
+      image: "/Images/Certificates/Foundations Associate-1.jpg",
+      detail:
+        "Achieved Oracle Foundations Associate certification, gaining a comprehensive understanding of core concepts, tools, and practices essential for building a strong foundation in technology and business solutions.",
+    },
+    {
+      name: "Software Testing",
+      image: "/Images/Certificates/Software Testing-1.jpg",
+      detail:
+        "Completed a basic software testing course through Naan Mudhalvan by OpenMentor, gaining introductory knowledge of software quality concepts and fundamental testing principles used in development.",
+    },
+  ];
+
   return (
     <section
       id="certificates"
@@ -27,29 +59,26 @@ export default function Certifications() {
         className="md:w-8/10 w-full md:h-[60vh] mb-20"
       >
         <CarouselContent className="h-full ">
-          {Array.from({ length: 5 }).map((_, index) => (
+          {certificates.map((certificate, index) => (
             <CarouselItem
               key={index}
               className="md:basis-1/2 lg:basis-1/3 h-full basis-1/1"
             >
               <div className="w-full rounded-3xl flex flex-col h-[60vh] ] md:h-full relative border-4 border-effect overflow-hidden bg-blue-950">
                 <Image
-                  src="/images/projects/Notes.png"
-                  alt="profile"
+                  src={certificate.image}
+                  alt={certificate.name}
                   width={100}
                   height={100}
                   loading="eager"
                   className="h-5/10 w-auto m-4 rounded-2xl hover-effect-y"
                 />
-                <div className=" w-auto mr-4 ml-4 h-5/10">
+                <div className=" w-auto mr-4 ml-4 h-5/10 mb-4 overflow-auto">
                   <strong className="flex justify-center">
-                    AI Enhance & Development
+                    {certificate.name}
                   </strong>
-                  <p className="text-justify line-clamp-5 md:line-clamp-6 font-light">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Odit eum pariatur aperiam dolore molestiae aspernatur quo
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Odit eum pariatur aperiam dolore molestiae aspernatur
+                  <p className="scrollbar-none text-justify md:line-clamp-6 font-light">
+                    {certificate.detail}
                   </p>
                 </div>
               </div>

@@ -27,17 +27,18 @@ export default function Hero() {
         <h2 className="text-3xl flex font-bold items-end justify-center md:justify-start">
           Hi,I&apos;m <span className="text-2xl font-light">&ensp;Kesavan</span>
         </h2>
-        <h1 className="text-4xl font-extrabold flex justify-center md:justify-start flex-wrap text-center">
-          <span className="text-blue-400 typing-effect max-w-fit">
+        <h1 className="text-4xl font-extrabold flex flex-col md:flex-row justify-center md:justify-start flex-wrap text-center">
+          <span className="mr-auto ml-auto md:mr-0 md:ml-0 text-blue-400 typing-effect max-w-fit">
             Fullstack
           </span>
-          Developer
+          <span className="mr-auto ml-auto md:mr-0 md:ml-0">Developer</span>
         </h1>
         <p className="md:w-[80%] text-blue-200 flex justify-center flex-wrap h-auto">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
-          aliquid eveniet vel sit doloremque voluptatum voluptates iure
-          similique itaque eaque. Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Consequatur, blanditiis.
+          A passionate Fullstack developer dedicated to crafting responsive,
+          user-friendly websites that blend creativity with clean, efficient
+          code. With hands-on experience in Tailwind, TypeScripte, ReactJS,
+          Redux and NextJS, I specialize in turning ideas into dynamic digital
+          experiences.
         </p>
         <div className="flex items-center justify-center md:justify-start gap-7 text-blue-200 flex-wrap mt-3 ">
           <a href="" className="flex spin-effect-sm relative hover-effect">

@@ -10,7 +10,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <main className="main-container bg-amber-400">
+      <main className="main-container">
         <Hero />
         <About />
         <Projects />

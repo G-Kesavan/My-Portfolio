@@ -32,27 +32,31 @@ export default function About() {
           />
         </div>
         <div className="md:w-6/10 m-4 mt-0 p-2 pt-0 flex flex-col gap-4 items-start justify-start text-justify">
-          <p> 
+          <p>
             Hello! I&apos;m Kesavan, a passionate developer with experience in
             building web applications using modern technologies. I love creating
             efficient and scalable solutions to solve real-world problems.
           </p>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit ab
-            autem similique quod eum esse quo adipisci optio sunt quae, labore
-            blanditiis dolore, est dolores sapiente cupiditate voluptatum
+            My goal is to grow into a Softwarw Engineer, contribute to impactful
+            projects, and build intuitive digital experiences that solve
+            real-world problems.
           </p>
 
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit ab
-            autem similique quod eum esse quo adipisci optio sunt quae, labore
+            Practicing NextJS projects and learning advanced JavaScripte
+            frameworks. Working on a Social Media Project and contributing to open
+            source.
           </p>
 
           <p className="flex items-center justify-between text-yellow-100">
             <i className="pr-1 text-yellow-300">
               <BrainIcon size={20} />
             </i>
-            <span className="flex text-center">blanditiis dolore, est dolores sapiente cupiditate voluptatum</span>
+            <span className="flex text-center">
+              Problem Solving, Team Collaboration, Communication, Time
+              Management
+            </span>
             <i className="pl-1 text-pink-300">
               <HeartPulse size={20} />
             </i>
