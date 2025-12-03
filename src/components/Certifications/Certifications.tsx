@@ -12,19 +12,19 @@ export default function Certifications() {
   const certificates = [
     {
       name: "CodSoft Intership Web Development",
-      image: "/Images/certificates/certificate1.png",
+      image: "/images/certificates/certificate1.png",
       detail:
         "Completed virtual web development internship at CodSoft, gaining hands-on experience in ReactJS, HTML, CSS, JavaScript, and real-world frontend development.",
     },
     {
       name: "WORKSHOP PARTICIPATION",
-      image: "/Images/certificates/certificate2.png",
+      image: "/images/certificates/certificate2.png",
       detail:
         "Attended AI-enhanced web development workshop by Guha Industrial Solutions, learning to integrate AI, Web3, blockchain, and emerging technologies to build modern, intelligent, and decentralized websites.",
     },
     {
       name: "AI Foundations Associate",
-      image: "/Images/certificates/certificate3.png",
+      image: "/images/certificates/certificate3.png",
       detail:
         "Achieved AI Foundations Associate certification from Oracle, gaining foundational knowledge in artificial intelligence concepts, machine learning algorithms, and real-world AI applications for modern business solutions.",
     },
@@ -36,7 +36,7 @@ export default function Certifications() {
     },
     {
       name: "Software Testing",
-      image: "/Images/certificates/certificate5.png",
+      image: "/images/certificates/certificate5.png",
       detail:
         "Completed a basic software testing course through Naan Mudhalvan by OpenMentor, gaining introductory knowledge of software quality concepts and fundamental testing principles used in development.",
     },
