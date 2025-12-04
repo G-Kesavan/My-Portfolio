@@ -55,7 +55,7 @@ export default function Projects() {
       title: "Landing Page (DOM)",
       tech: "HTML, CSS",
       desc: "Designed a static shopping page layout with modern responsive design.",
-      img: "/images/projects/empty.jpg",
+      img: "/images/projects/empty.png",
       link: "https://your-shopping-page-link.com",
       code: "https://github.com/G-Kesavan/CODSOFT/tree/main/CODSOFT_Landing%20page",
     },
