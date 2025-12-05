@@ -330,34 +330,23 @@ nav {
 /* About Page end */
 
 /* Projects Page start */
-
-.project-img {
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 40px),
-    25% calc(100% - 40px),
-    calc(25% - 40px) 100%,
-    0 100%
-  );
-  height: calc(70%);
+.hover-project:hover .project-name{
+  display: block;
+}
+.project-chang-effect{
+  animation: project-chang 0.5s linear;
 }
 
-.project-description {
-  height: calc(30% + 40px);
-  position: absolute;
-}
-
-.project-header {
-  width: calc(75% + 40px);
-  height: 40px;
-  clip-path: polygon(40px 0px, 100% 0px, 100% 100%, 0px 100%);
-  overflow: hidden;
-}
-
-.project-content {
-  height: calc(100% - 40px);
-  overflow: hidden;
+@keyframes project-chang {
+  0%{
+    transform: scale(0.3) translateY(350px);  
+  }
+  40%{
+    transform: scale(0.5);  
+  }
+  100%{
+    transform: scale(1) translateY(0px);
+  }
 }
 
 /* Projects Page end */

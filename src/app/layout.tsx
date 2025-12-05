@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import "@/styles/variables.css";
-import NetBackground from "@/components/NetBackground";
 
 export default function RootLayout({
   children,
@@ -10,7 +9,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <NetBackground />
         {children}
       </body>
     </html>

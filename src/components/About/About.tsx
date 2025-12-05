@@ -25,8 +25,8 @@ export default function About() {
           <Image
             src="/images/profile.png"
             alt="profile"
-            width="100"
-            height="100"
+            width={500}
+            height={500}
             loading="eager"
             className="h-full w-full about-profile object-cover object-top"
           />
@@ -45,8 +45,8 @@ export default function About() {
 
           <p>
             Practicing NextJS projects and learning advanced JavaScripte
-            frameworks. Working on a Social Media Project and contributing to open
-            source.
+            frameworks. Working on a Social Media Project and contributing to
+            open source.
           </p>
 
           <p className="flex items-center justify-between text-yellow-100">

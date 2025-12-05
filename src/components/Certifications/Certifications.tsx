@@ -68,8 +68,8 @@ export default function Certifications() {
                 <Image
                   src={certificate.image}
                   alt={certificate.name}
-                  width={100}
-                  height={100}
+                  width={250}
+                  height={250}
                   loading="eager"
                   className="h-5/10 w-auto m-4 rounded-2xl hover-effect-y"
                 />

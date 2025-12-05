@@ -2,5 +2,5 @@
 
 :root{
     --bg-color:linear-gradient(90deg,rgb(151, 187, 250),rgb(93, 166, 255),rgb(151, 187, 250));
-    --primery-bg-color:linear-gradient(120deg,rgb(0, 0, 0) ,rgb(50, 70, 244),rgb(80, 117, 198),rgb(50, 70, 244),rgb(22, 18, 94),rgb(0, 0, 0));   
+    --primery-bg-color:linear-gradient(120deg,rgb(0, 0, 0) ,rgb(50, 70, 244),rgb(80, 117, 198),rgb(50, 70, 244),rgb(17, 16, 33),rgb(0, 0, 0));   
 }      
