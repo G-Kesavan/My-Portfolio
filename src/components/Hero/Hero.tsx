@@ -28,7 +28,7 @@ export default function Hero() {
           Hi,I&apos;m <span className="text-2xl font-light">&ensp;Kesavan</span>
         </h2>
         <h1 className="text-4xl font-extrabold flex flex-col md:flex-row justify-center md:justify-start flex-wrap text-center">
-          <span className="mr-auto ml-auto md:mr-0 md:ml-0 text-blue-400 typing-effect max-w-fit">
+          <span className="mr-auto ml-auto md:mr-0 md:ml-0 text-blue-950 typing-effect max-w-fit text-shadow-[0px_0px_5px] text-shadow-blue-50">
             Fullstack
           </span>
           <span className="mr-auto ml-auto md:mr-0 md:ml-0">Developer</span>

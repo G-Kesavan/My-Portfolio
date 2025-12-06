@@ -62,38 +62,38 @@ export default function About() {
             </i>
           </p>
           <strong className="text-white text-lg">Skills:</strong>
-          <div className="flex gap-2 flex-wrap items-center justify-start text-white">
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
+          <div className="flex gap-2 flex-wrap items-center justify-center text-white">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <FaHtml5 size={30} />
             </i>
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <FaCss3 size={30} />
             </i>
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <FaJs size={30} />
             </i>
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <SiTailwindcss size={30} />
             </i>
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <FaReact size={30} />
             </i>
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <SiRedux size={30} />
             </i>
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <FaNodeJs size={30} />
             </i>
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <SiExpress size={30} />
             </i>
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <SiMongodb size={30} />
             </i>
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <SiMongoose size={30} />
             </i>
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200"> 
               <SiNextdotjs size={30} />
             </i>
           </div>

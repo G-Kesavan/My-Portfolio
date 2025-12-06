@@ -4,6 +4,7 @@ import { MdPhone, MdFileCopy, MdLocationOn } from "react-icons/md";
 import { FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -14,7 +15,7 @@ export default function Contact() {
   const copyFun = (x: string) => {
     const copyText = document.querySelector(`.${x}`)?.textContent;
     navigator.clipboard.writeText(String(copyText));
-    alert(`${x.slice(4).replace("_", " ")} is copyed ✅`);
+    toast.success(`${x.slice(4).replace("_", " ")} is copied ✅`,{position: "top-center",autoClose: 3000});
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -30,9 +31,12 @@ export default function Contact() {
     const data = await res.json();
 
     if (data.success) {
-      alert("Message is sent ✅");
+      toast.success("Message is sented ✅",{position: "top-center",autoClose: 3000,theme: "colored",});
+      setName("");
+      setEmail("");
+      setMessage("");
     } else {
-      alert("Message failed ❌ Please try again.");
+      toast.error("Message failed ❌ Please try again.",{position: "top-center",autoClose: 3000,theme: "colored",});
     }
 
     setLoading(false);

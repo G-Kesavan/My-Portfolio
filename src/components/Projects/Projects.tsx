@@ -151,7 +151,7 @@ export default function Projects() {
           loop: false,
         }}
         orientation={"horizontal"}
-        className=" w-9/10 md:w-7/10 lg:w-6/10"
+        className=" w-7/10 lg:w-6/10"
       >
         <CarouselContent className="h-full w-full">
           {projects.map((project, index) => (
@@ -161,7 +161,7 @@ export default function Projects() {
                 setProjectNo(index);
                 setAnimation();
               }}
-              className="basis-1/2 md:basis-1/3 lg:basis-1/4  min-h-full"
+              className="basis-1/1 md:basis-1/3 lg:basis-1/4  min-h-full"
             >
               <div className="flex flex-col p-0.5 relative w-full h-full rounded-2xl hover-project cursor-pointer overflow-hidden ">
                 <Image
