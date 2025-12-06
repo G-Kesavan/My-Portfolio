@@ -61,39 +61,39 @@ export default function About() {
               <HeartPulse size={20} />
             </i>
           </p>
-          <strong className="text-white">Skills:</strong>
+          <strong className="text-white text-lg">Skills:</strong>
           <div className="flex gap-2 flex-wrap items-center justify-start text-white">
-            <i className="border-2 rounded-2xl p-2 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
               <FaHtml5 size={30} />
             </i>
-            <i className="border-2 rounded-2xl p-2 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
               <FaCss3 size={30} />
             </i>
-            <i className="border-2 rounded-2xl p-2 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
               <FaJs size={30} />
             </i>
-            <i className="border-2 rounded-2xl p-2 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
               <SiTailwindcss size={30} />
             </i>
-            <i className="border-2 rounded-2xl p-2 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
               <FaReact size={30} />
             </i>
-            <i className="border-2 rounded-2xl p-2 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
               <SiRedux size={30} />
             </i>
-            <i className="border-2 rounded-2xl p-2 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
               <FaNodeJs size={30} />
             </i>
-            <i className="border-2 rounded-2xl p-2 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
               <SiExpress size={30} />
             </i>
-            <i className="border-2 rounded-2xl p-2 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
               <SiMongodb size={30} />
             </i>
-            <i className="border-2 rounded-2xl p-2 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
               <SiMongoose size={30} />
             </i>
-            <i className="border-2 rounded-2xl p-2 hover-effect bg-blue-950">
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950">
               <SiNextdotjs size={30} />
             </i>
           </div>

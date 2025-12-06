@@ -100,7 +100,7 @@ export default function Projects() {
         <div
           className={`${
             isAnimation ? "project-chang-effect" : null
-          } md:w-5/10 relative spin-effect-lg m-3 flex justify-center `}
+          } md:w-5/10 min-h-[40vh] relative spin-effect-sm m-3 flex justify-center shadow-[0px_0px_12px_5px] shadow-blue-200 rounded-2xl`}
         >
           <Image
             src={projects[projectNo].img}
@@ -108,35 +108,39 @@ export default function Projects() {
             width={500}
             height={500}
             loading="eager"
-            className="  w-full h-full object-cover rounded-3xl relative border-amber-50 "
+            className="w-full object-cover rounded-2xl relative border-amber-50 project-img"
           />
         </div>
         <div
           className={`${
             isAnimation ? "project-chang-effect" : null
-          }  p-4 rounded-2xl md:w-5/10 md:pt-0`}
+          }  p-4 rounded-2xl md:w-5/10 md:pt-0 flex flex-col items-center justify-center`}
         >
-          <strong className="text-2xl">
-            Project Name : {projects[projectNo].title}
+          <strong className="text-2xl text-blue-50 font-extrabold">  
+            {projects[projectNo].title}
           </strong>
           <p className="text-lg mt-2">Use Tech : {projects[projectNo].tech}</p>
-          <p className="mt-1 text-blue-200">
+          <p className="mt-1 text-blue-200 md:line-clamp-6 text-justify">
             Details : {projects[projectNo].desc} Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Odio maiores animi vitae repellat,
             dolores omnis minima dolore optio distinctio numquam, sed suscipit
           </p>
-          <div className="flex gap-4 mt-2">
-            <button className="flex gap-2 items-center justify-center p-2 pl-3 pr-3 bg-blue-950 border rounded-full">
-              <i>
-                <SiGithub size={20} />
-              </i>
-              Code
+          <div className="flex gap-8 mt-4">
+            <button className="hover-effect spin-effect-sm relative flex gap-2 items-center justify-center rounded-full">
+              <p className="z-1 flex gap-2 items-center justify-center p-2 pl-3 pr-3 bg-blue-950 rounded-2xl">
+                <i>
+                  <SiGithub size={20} />
+                </i>
+                Code
+              </p>
             </button>
-            <button className="flex gap-2 items-center justify-center p-2 pl-3 pr-3 bg-blue-950 border rounded-full">
-              <i>
-                <FaEye size={20} />
-              </i>
-              Live
+            <button className="hover-effect spin-effect-sm relative flex gap-2 items-center justify-center rounded-full">
+              <p className="z-1 flex gap-2 items-center justify-center p-2 pl-3 pr-3 bg-blue-950 rounded-2xl">
+                <i>
+                  <FaEye size={20} />
+                </i>
+                Live
+              </p>
             </button>
           </div>
         </div>
@@ -153,35 +157,35 @@ export default function Projects() {
           {projects.map((project, index) => (
             <CarouselItem
               key={index}
-              className="basis-1/2 md:basis-1/4 lg:basis-1/5  min-h-full"
+              onClick={() => {
+                setProjectNo(index);
+                setAnimation();
+              }}
+              className="basis-1/2 md:basis-1/3 lg:basis-1/4  min-h-full"
             >
-              <div className="flex flex-col relative w-full h-full rounded-2xl hover-project cursor-pointer overflow-hidden">
+              <div className="flex flex-col p-0.5 relative w-full h-full rounded-2xl hover-project cursor-pointer overflow-hidden ">
                 <Image
-                  src={project.img}
+                  src={project.img}  
                   alt={project.title}
                   width={200}
                   height={200}
-                  onClick={() => {
-                    setProjectNo(index);
-                    setAnimation();
-                  }}
                   loading="eager"
-                  className="w-full h-full object-fill rounded-2xl border-2 border-blue-950"
+                  className="w-full h-full object-fill shadow-[0px_0px_2px_1px] shadow-blue-50 rounded-2xl"
                 />
-                <div className="project-name hidden animate-collapsible-down absolute bottom-0 left-0 z-20 w-full h-fit bg-blue-950 items-center p-1 text-center rounded-b-2xl">
-                  <strong className="text-white">{project.title}</strong>
+                <div className="project-name absolute bottom-0.5 right-0.5 w-7/10 h-6/10 bg-blue-950 items-center p-1.5 text-center rounded-tl-2xl rounded-br-2xl hidden">
+                  <span className="text-white">{project.title}</span>
                 </div>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
         <CarouselPrevious
-          size={"lg"}
-          className="text-white bg-blue-950 border-blue-950 "
+          size={"sm"}
+          className="text-white bg-blue-950 border-blue-950 shadow-[0px_0px_2px_1px] shadow-blue-50"
         />
         <CarouselNext
-          size={"lg"}
-          className="text-white bg-blue-950 border-blue-950 "
+          size={"sm"}
+          className="text-white bg-blue-950 border-blue-950 shadow-[0px_0px_2px_1px] shadow-blue-50"
         />
       </Carousel>
     </section>

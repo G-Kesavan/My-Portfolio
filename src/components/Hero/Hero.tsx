@@ -65,7 +65,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="spin-effect-lg relative rounded-3xl h-[55vh] md:h-[60vh] lg:h-[65vh] w-auto">
+      <div className="shadow-[0px_0px_15px_8px] shadow-blue-200 spin-effect-lg relative rounded-3xl h-[50vh] md:h-[60vh] lg:h-[65vh] w-auto"> 
         <Image
           src="/images/profile.png"
           alt="profile"

@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import Image from "next/image";
 import {
   Carousel,
@@ -7,11 +8,24 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
+import { useEffect, useState } from "react";
 
 export default function Certifications() {
+  const [screenWidth, setScreenWidth] = useState(0);
+  useEffect(() => {
+    const handleSet = () =>{
+      setScreenWidth(window.innerWidth)
+    }
+    handleSet()
+    window.addEventListener("resize", () => setScreenWidth(window.innerWidth));
+    return () =>
+      window.removeEventListener("resize", () =>
+        setScreenWidth(window.innerWidth)
+      );
+  }, []);
   const certificates = [
     {
-      name: "CodSoft Intership Web Development",
+      name: "Web Development Intership",
       image: "/images/certificates/certificate1.png",
       detail:
         "Completed virtual web development internship at CodSoft, gaining hands-on experience in ReactJS, HTML, CSS, JavaScript, and real-world frontend development.",
@@ -55,29 +69,29 @@ export default function Certifications() {
           align: "start",
           loop: false,
         }}
-        orientation={"horizontal"}
-        className="md:w-8/10 w-full md:h-[60vh] mb-20"
+        orientation={screenWidth > 768 ? "horizontal" : "vertical"}
+        className="md:w-9/10 lg:8/10 w-auto md:h-[60vh] h-[160vh] mb-20"
       >
-        <CarouselContent className="h-full ">
+        <CarouselContent className="h-full scrollbar-seting">
           {certificates.map((certificate, index) => (
             <CarouselItem
               key={index}
-              className="md:basis-1/2 lg:basis-1/3 h-full basis-1/1"
+              className="md:basis-1/2 lg:basis-1/3 h-full basis-1/4"
             >
-              <div className="w-full rounded-3xl flex flex-col h-[60vh] ] md:h-full relative border-4 border-effect overflow-hidden bg-blue-950">
+              <div className="m-4 shadow-[0px_0px_6px_3px] shadow-blue-50 rounded-3xl flex flex-col h-auto md:h-[95%] relative overflow-hidden bg-blue-950">
                 <Image
                   src={certificate.image}
                   alt={certificate.name}
                   width={250}
                   height={250}
                   loading="eager"
-                  className="h-5/10 w-auto m-4 rounded-2xl hover-effect-y"
+                  className="h-5/10 w-auto m-4 rounded-2xl"
                 />
-                <div className=" w-auto mr-4 ml-4 h-5/10 mb-4 overflow-auto">
-                  <strong className="flex justify-center">
-                    {certificate.name}
+                <div className=" w-auto mr-4 ml-4 h-5/10 mb-4 overflow-visible scrollbar-seting">
+                  <strong className="flex justify-center text-center">
+                    {certificate.name.toUpperCase()}
                   </strong>
-                  <p className="scrollbar-none text-justify md:line-clamp-6 font-light">
+                  <p className="scrollbar-seting text-justify md:line-clamp-6 font-light">
                     {certificate.detail}
                   </p>
                 </div>
@@ -86,12 +100,12 @@ export default function Certifications() {
           ))}
         </CarouselContent>
         <CarouselPrevious
-          size={"lg"}
-          className="text-white bg-blue-950 border-blue-950 "
+          size={"sm"}
+          className="text-white bg-blue-950 border-blue-950 hidden md:flex shadow-[0px_0px_6px_3px] shadow-blue-50"
         />
         <CarouselNext
-          size={"lg"}
-          className="text-white bg-blue-950 border-blue-950 "
+          size={"sm"}
+          className="text-white bg-blue-950 border-blue-950 hidden md:flex shadow-[0px_0px_6px_3px] shadow-blue-50"
         />
       </Carousel>
     </section>

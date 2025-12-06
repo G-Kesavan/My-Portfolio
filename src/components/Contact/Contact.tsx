@@ -41,18 +41,18 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="md:h-screen min-h-screen p-8 pt-25 bg-blue-100 flex flex-col"
+      className="lg:h-screen min-h-screen p-8 pt-25 bg-blue-100 flex flex-col items-center"
     >
       <h2 className="text-4xl font-bold text-light-blue-600 mb-6 flex justify-center w-full">
         Contact Me
       </h2>
-      <div className="flex flex-col md:flex-row w-full gap-10 md:h-[60vh] md:justify-center">
+      <div className="flex flex-col lg:flex-row w-full md:w-17/20 xl:w-7/10 gap-10 lg:h-[60vh] md:justify-center">
         <form
           onSubmit={handleSubmit}
-          className="bg-transparent backdrop-blur-3xl backdrop-brightness-130 md:w-4/10 w-full p-8 rounded-2xl flex flex-col justify-center"
+          className="bg-blue-900 lg:w-5/10 w-full p-8 rounded-2xl flex flex-col justify-center shadow-[0px_0px_12px_5px] shadow-blue-200"
         >
-          <label className="block text-light-blue-800 mb-2" htmlFor="name">
-            Name
+          <label className="block text-light-blue-800 mb-2" htmlFor="name"> 
+            Name 
           </label>
           <input
             className="w-full p-2 border border-light-blue-400 rounded"
@@ -97,16 +97,16 @@ export default function Contact() {
           ></textarea>
 
           <button
-            className="flex mt-3 ml-auto hover-effect mr-auto bg-blue-950 px-4 py-2 rounded-full hover:bg-blue-50 hover:text-black transition duration-300"
+            className="flex mt-3 ml-auto hover-effect mr-auto bg-blue-950 px-4 py-2 rounded-full hover:bg-blue-50 hover:text-black"
             type="submit"
             disabled={loading}
           >
             {!loading ? "Send Message" : "Sending..."}
           </button>
         </form>
-        <div className="backdrop-blur-3xl backdrop-brightness-130 flex justify-center flex-col md:w-4/10 gap-5  p-6 rounded-2xl text-white">
+        <div className="bg-blue-900 flex justify-center items-center flex-col lg:w-5/10 gap-5 p-6 rounded-2xl text-white shadow-[0px_0px_12px_5px] shadow-blue-200">
           <strong className="text-justify text-lg font-normal">
-            Get in touch with us for inquiries, support, or feedback.We&apos;re
+            Get in touch with us for inquiries, support, or feedback. We&apos;re
             here to hel you every step of the way
           </strong>
           <ul className="flex flex-col gap-2 font-light text-lg p-3">
@@ -115,7 +115,7 @@ export default function Contact() {
                 <FaUser size={21} />
               </i>
               <p className="copyName">Kesava Perumal G</p>
-              <i className="text-neutral-300 hover-effect cursor-pointer">
+              <i className="text-blue-50 hover-effect cursor-pointer">
                 <MdFileCopy size={20} onClick={() => copyFun("copyName")} />
               </i>
             </li>
@@ -123,10 +123,11 @@ export default function Contact() {
               <i>
                 <SiGmail size={21} />
               </i>
-              <p className="copyMail_address overflow-auto mr-4 ml-4 text-start">
-                mr.kesavaperumal@gmail.com
+              <p className="copyMail_address overflow-hidden mr-4 ml-4 text-center flex flex-wrap justify-center items-center">
+                <span>mr.kesavaperumal</span>
+                <span>@gmail.com </span>
               </p>
-              <i className="text-neutral-300 hover-effect cursor-pointer">
+              <i className="text-blue-50 hover-effect cursor-pointer">
                 <MdFileCopy
                   size={20}
                   onClick={() => copyFun("copyMail_address")}
@@ -138,7 +139,7 @@ export default function Contact() {
                 <MdPhone size={25} />
               </i>
               <p className="copyPhone_Number">+91 63 74 79 02 92</p>
-              <i className="text-neutral-300 hover-effect cursor-pointer">
+              <i className="text-blue-50 hover-effect cursor-pointer">
                 <MdFileCopy
                   size={20}
                   onClick={() => copyFun("copyPhone_Number")}
@@ -153,28 +154,28 @@ export default function Contact() {
                 8/277, Velikunan Kurichi, Virudhachalam TK, Cuddaloar, Tamil
                 nadu - 607 804
               </p>
-              <i className="text-neutral-300 hover-effect cursor-pointer">
+              <i className="text-blue-50 hover-effect cursor-pointer">
                 <MdFileCopy size={20} onClick={() => copyFun("copyLocation")} />
               </i>
             </li>
           </ul>
-          <ul className="flex justify-around items-center">
-            <li className="p-2 rounded-2xl hover-effect bg-blue-950">
+          <ul className="flex justify-around items-center w-fit gap-3 md:gap-5">
+            <li className="p-2 md:p-3 rounded-2xl hover-effect bg-blue-50 text-blue-950">
               <a href="https://wa.me/6374790292">
                 <FaWhatsapp size={40} />
               </a>
             </li>
-            <li className="p-2 rounded-2xl hover-effect bg-blue-950">
+            <li className="p-2 md:p-3 rounded-2xl hover-effect bg-blue-50 text-blue-950">
               <a href="tel:+916374790292">
                 <MdPhone size={40} />
               </a>
             </li>
-            <li className="p-2 rounded-2xl hover-effect bg-blue-950">
+            <li className="p-2 md:p-3 rounded-2xl hover-effect bg-blue-50 text-blue-950">
               <a href="https://www.linkedin.com/in/kesavan-bca?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                 <FaLinkedin size={40} />
               </a>
             </li>
-            <li className="p-2 rounded-2xl hover-effect bg-blue-950">
+            <li className="p-2 md:p-3 rounded-2xl hover-effect bg-blue-50 text-blue-950">
               <a href="https://t.me/KESAVAN420BOY">
                 <FaTelegram size={40} />
               </a>
