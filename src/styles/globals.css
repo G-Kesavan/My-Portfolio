@@ -138,34 +138,9 @@
   display:"none"
 }
 
-#hero {
-   background-image: var(--hero-bg-color);
-  color: azure;
-  border-bottom: 10px solid rgba(7, 6, 46, 0.092);
-}
-
-#about {
-   background-image: var(--about-bg-color);
-  color: azure;
-  border-bottom: 10px solid rgba(7, 6, 46, 0.092);
-}
-
-#projects {
-   background-image: var(--project-bg-color);
-  color: azure;
-  border-bottom: 10px solid rgba(7, 6, 46, 0.092);
-}
-
-#certificates {
-   background-image: var(--certificate-bg-color);
-  color: azure;
-  border-bottom: 10px solid rgba(7, 6, 46, 0.092);
-}
-
-#contact {
-   background-image: var(--contact-bg-color);
-  color: azure;
-  border-bottom: 10px solid rgba(0, 0, 0, 0.427);
+body {
+  background-image: var(--bg-color);
+  color: white;
 }
 
 nav {

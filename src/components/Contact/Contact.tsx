@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="lg:h-screen min-h-screen p-8 pt-25 bg-blue-100 flex flex-col items-center"
+      className="lg:h-screen min-h-screen p-8 pt-25 flex flex-col items-center"
     >
       <h2 className="text-4xl font-bold text-light-blue-600 mb-6 flex justify-center w-full">
         Contact Me
@@ -53,7 +53,7 @@ export default function Contact() {
       <div className="flex flex-col lg:flex-row w-full md:w-17/20 xl:w-7/10 gap-10 lg:h-[60vh] md:justify-center">
         <form
           onSubmit={handleSubmit}
-          className="bg-blue-900 lg:w-5/10 w-full p-8 rounded-2xl flex flex-col justify-center shadow-[0px_0px_12px_5px] shadow-blue-200"
+          className="bg-blue-950 lg:w-5/10 w-full p-8 rounded-2xl flex flex-col justify-center shadow-[0px_0px_12px_5px] shadow-blue-200"
         >
           <label className="block text-light-blue-800 mb-2" htmlFor="name"> 
             Name 
@@ -108,7 +108,7 @@ export default function Contact() {
             {!loading ? "Send Message" : "Sending..."}
           </button>
         </form>
-        <div className="bg-blue-900 flex justify-center items-center flex-col lg:w-5/10 gap-5 p-6 rounded-2xl text-white shadow-[0px_0px_12px_5px] shadow-blue-200">
+        <div className="bg-blue-950 flex justify-center items-center flex-col lg:w-5/10 gap-5 p-6 rounded-2xl text-white shadow-[0px_0px_12px_5px] shadow-blue-200">
           <strong className="text-justify text-lg font-normal">
             Get in touch with us for inquiries, support, or feedback. We&apos;re
             here to hel you every step of the way

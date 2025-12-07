@@ -15,7 +15,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen p-8 pt-20 bg-blue-200 flex flex-wrap lg:text-lg"
+      className="min-h-screen p-8 pt-20 flex flex-wrap lg:text-lg"
     >
       <h2 className="text-4xl font-bold text-light-blue-600 mb-6 flex justify-center w-full">
         About Me

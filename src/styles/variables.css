@@ -2,10 +2,5 @@
 
 :root{
     --nav-bg-color:linear-gradient(90deg,rgb(151, 187, 250),rgb(93, 166, 255),rgb(151, 187, 250));
-    --hero-bg-color:linear-gradient(120deg,rgb(0, 0, 0) ,rgb(50, 70, 244),rgb(95, 146, 255));     
-    --about-bg-color:linear-gradient(140deg,rgb(0, 0, 0) ,rgb(50, 70, 244),rgb(50, 70, 244));   
-    --project-bg-color:linear-gradient(90deg,rgb(0, 0, 0) ,rgb(64, 89, 251),rgb(64, 89, 251),rgb(0, 0, 0));   
-    --certificate-bg-color:linear-gradient(20deg,rgb(0, 0, 0) ,rgb(50, 70, 244),rgb(80, 117, 198),rgb(50, 70, 244),rgb(0, 0, 0));   
-    --contact-bg-color:linear-gradient(120deg,rgb(0, 0, 0) ,rgb(50, 70, 244),rgb(80, 117, 198),rgb(50, 70, 244),rgb(0, 0, 0));   
-
+    --bg-color:linear-gradient(120deg,rgb(0, 0, 0) ,rgb(50, 70, 244),rgb(0, 0, 0),rgb(1, 78, 244),rgb(0, 0, 0));     
 }

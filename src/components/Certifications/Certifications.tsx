@@ -59,7 +59,7 @@ export default function Certifications() {
   return (
     <section
       id="certificates"
-      className="md:h-screen  min-h-screen p-8 pt-20 bg-blue-100 flex flex-col items-center justify-center"
+      className="md:h-screen  min-h-screen p-8 pt-20 flex flex-col items-center justify-center"
     >
       <h2 className="text-4xl font-bold text-light-blue-600 mb-6 flex justify-center w-full items-center">
         Certifications

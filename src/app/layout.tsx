@@ -1,3 +1,4 @@
+import Background from "@/components/ui/Background";
 import "@/styles/globals.css";
 import "@/styles/variables.css";
 
@@ -8,7 +9,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="relative min-h-screen">
+        <Background/>
         {children}
       </body>
     </html>
