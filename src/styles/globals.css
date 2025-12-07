@@ -139,6 +139,7 @@
 }
 
 body {
+  z-index: 100;
   background-image: var(--bg-color);
   color: white;
 }
