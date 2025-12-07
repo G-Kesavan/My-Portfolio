@@ -13,10 +13,10 @@ import { useEffect, useState } from "react";
 export default function Certifications() {
   const [screenWidth, setScreenWidth] = useState(0);
   useEffect(() => {
-    const handleSet = () =>{
-      setScreenWidth(window.innerWidth)
-    }
-    handleSet()
+    const handleSet = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    handleSet();
     window.addEventListener("resize", () => setScreenWidth(window.innerWidth));
     return () =>
       window.removeEventListener("resize", () =>
@@ -61,7 +61,7 @@ export default function Certifications() {
       id="certificates"
       className="md:h-screen  min-h-screen p-8 pt-20 flex flex-col items-center justify-center"
     >
-      <h2 className="text-4xl font-bold text-light-blue-600 mb-6 flex justify-center w-full items-center">
+      <h2 className="text-4xl font-bold text-light-blue-600 mb-6 flex justify-center w-full items-center text-white">
         Certifications
       </h2>
       <Carousel
@@ -88,10 +88,10 @@ export default function Certifications() {
                   className="h-5/10 w-auto m-4 rounded-2xl"
                 />
                 <div className=" w-auto mr-4 ml-4 h-5/10 mb-4 overflow-visible scrollbar-seting">
-                  <strong className="flex justify-center text-center">
+                  <strong className="flex justify-center text-center text-white">
                     {certificate.name.toUpperCase()}
                   </strong>
-                  <p className="scrollbar-seting text-justify md:line-clamp-6 font-light">
+                  <p className="scrollbar-seting text-justify md:line-clamp-6 font-light text-blue-200">
                     {certificate.detail}
                   </p>
                 </div>

@@ -1,6 +1,25 @@
 @import "tailwindcss";
 
-:root{
-    --nav-bg-color:linear-gradient(90deg,rgb(151, 187, 250),rgb(93, 166, 255),rgb(151, 187, 250));
-    --bg-color:linear-gradient(120deg,rgb(0, 0, 0) ,rgb(50, 70, 244),rgb(0, 0, 0),rgb(1, 78, 244),rgb(0, 0, 0));     
+:root {
+  --nav-bg-color: linear-gradient(
+    90deg,
+    rgb(151, 187, 250),
+    rgb(93, 166, 255),
+    rgb(151, 187, 250)
+  );
+  --bg-color: linear-gradient(
+    120deg,
+    rgb(0, 0, 0),
+    rgb(58, 27, 233),
+    rgb(195, 159, 243),
+    white,
+    rgb(55, 60, 201),
+    rgb(28, 5, 157),
+    white,
+    rgb(122, 158, 236),
+    rgb(29, 4, 47),
+    white,
+    rgb(122, 158, 236),
+    rgb(29, 4, 47)
+  );
 }

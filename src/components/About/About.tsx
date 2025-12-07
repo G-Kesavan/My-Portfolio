@@ -17,11 +17,11 @@ export default function About() {
       id="about"
       className="min-h-screen p-8 pt-20 flex flex-wrap lg:text-lg"
     >
-      <h2 className="text-4xl font-bold text-light-blue-600 mb-6 flex justify-center w-full">
+      <h2 className="text-4xl font-bold text-light-blue-600 mb-6 flex justify-center w-full text-blue-50 ">
         About Me
       </h2>
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-5 text-blue-100">
-        <div className="spin-effect-about relative rounded-3xl h-[40vh] md:h-[50vh] lg:h-[40vh] w-[40vh]">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-5">
+        <div className="spin-effect-about relative rounded-3xl h-[40vh] md:h-[40vh] md:w-[40vh] w-[35vh]">
           <Image
             src="/images/profile.png"
             alt="profile"
@@ -93,7 +93,7 @@ export default function About() {
             <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <SiMongoose size={30} />
             </i>
-            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200"> 
+            <i className="rounded-2xl p-3 hover-effect bg-blue-950 shadow-[0px_0px_4px_2px] shadow-blue-200">
               <SiNextdotjs size={30} />
             </i>
           </div>

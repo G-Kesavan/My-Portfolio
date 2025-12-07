@@ -134,14 +134,14 @@
 .scrollbar-seting {
   scrollbar-width: none;
 }
-.scrollbar-seting ::-webkit-scrollbar{
-  display:"none"
+.scrollbar-seting ::-webkit-scrollbar {
+  display: "none";
 }
 
 body {
   z-index: 100;
   background-image: var(--bg-color);
-  color: white;
+  color: rgb(1, 2, 31);
 }
 
 nav {

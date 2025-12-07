@@ -15,7 +15,10 @@ export default function Contact() {
   const copyFun = (x: string) => {
     const copyText = document.querySelector(`.${x}`)?.textContent;
     navigator.clipboard.writeText(String(copyText));
-    toast.success(`${x.slice(4).replace("_", " ")} is copied ✅`,{position: "top-center",autoClose: 3000});
+    toast.success(`${x.slice(4).replace("_", " ")} is copied ✅`, {
+      position: "top-center",
+      autoClose: 3000,
+    });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -31,12 +34,20 @@ export default function Contact() {
     const data = await res.json();
 
     if (data.success) {
-      toast.success("Message is sented ✅",{position: "top-center",autoClose: 3000,theme: "colored",});
+      toast.success("Message is sented ✅", {
+        position: "top-center",
+        autoClose: 3000,
+        theme: "colored",
+      });
       setName("");
       setEmail("");
       setMessage("");
     } else {
-      toast.error("Message failed ❌ Please try again.",{position: "top-center",autoClose: 3000,theme: "colored",});
+      toast.error("Message failed ❌ Please try again.", {
+        position: "top-center",
+        autoClose: 3000,
+        theme: "colored",
+      });
     }
 
     setLoading(false);
@@ -47,16 +58,16 @@ export default function Contact() {
       id="contact"
       className="lg:h-screen min-h-screen p-8 pt-25 flex flex-col items-center"
     >
-      <h2 className="text-4xl font-bold text-light-blue-600 mb-6 flex justify-center w-full">
+      <h2 className="text-4xl font-bold text-light-blue-600 mb-6 flex justify-center w-full text-white">
         Contact Me
       </h2>
-      <div className="flex flex-col lg:flex-row w-full md:w-17/20 xl:w-7/10 gap-10 lg:h-[60vh] md:justify-center">
+      <div className="flex flex-col lg:flex-row w-9/10 md:w-17/20 xl:w-7/10 gap-10 lg:h-[60vh] md:justify-center text-white">
         <form
           onSubmit={handleSubmit}
           className="bg-blue-950 lg:w-5/10 w-full p-8 rounded-2xl flex flex-col justify-center shadow-[0px_0px_12px_5px] shadow-blue-200"
         >
-          <label className="block text-light-blue-800 mb-2" htmlFor="name"> 
-            Name 
+          <label className="block text-light-blue-800 mb-2" htmlFor="name">
+            Name
           </label>
           <input
             className="w-full p-2 border border-light-blue-400 rounded"
@@ -101,7 +112,7 @@ export default function Contact() {
           ></textarea>
 
           <button
-            className="flex mt-3 ml-auto hover-effect mr-auto bg-blue-950 px-4 py-2 rounded-full hover:bg-blue-50 hover:text-black"
+            className="flex mt-3 ml-auto hover-effect mr-auto px-4 py-2 rounded-full bg-blue-50 text-black"
             type="submit"
             disabled={loading}
           >
@@ -155,8 +166,7 @@ export default function Contact() {
                 <MdLocationOn size={25} />
               </i>
               <p className="copyLocation overflow-auto w-8/10 text-center">
-                8/277, Velikunan Kurichi, Virudhachalam TK, Cuddaloar, Tamil
-                nadu - 607 804
+                Neyveli, Virudhachalam TK, Cuddaloar, Tamil nadu - 607 804
               </p>
               <i className="text-blue-50 hover-effect cursor-pointer">
                 <MdFileCopy size={20} onClick={() => copyFun("copyLocation")} />

@@ -93,7 +93,7 @@ export default function Projects() {
       id="projects"
       className="md:h-screen min-h-screen p-8 pt-20 flex flex-col items-center justify-center"
     >
-      <h2 className="text-4xl font-bold text-light-blue-600 mb-8 flex justify-center w-full items-center">
+      <h2 className="text-4xl font-bold text-light-blue-600 mb-8 flex justify-center w-full items-center text-blue-50">
         Projects
       </h2>
       <div className="flex flex-col md:flex-row gap-8 md:h-[45vh] md:w-9/10 lg:w-8/10 mb-12 ">
@@ -116,32 +116,43 @@ export default function Projects() {
             isAnimation ? "project-chang-effect" : null
           }  p-4 rounded-2xl md:w-5/10 md:pt-0 flex flex-col items-center justify-center`}
         >
-          <strong className="text-2xl text-blue-50 font-extrabold">  
+          <strong className="text-2xl font-extrabold text-white">
             {projects[projectNo].title}
           </strong>
-          <p className="text-lg mt-2">Use Tech : {projects[projectNo].tech}</p>
-          <p className="mt-1 text-blue-200 md:line-clamp-6 text-justify">
+          <p className="text-lg mt-2 text-justify text-blue-100">
+            Use Tech :
+            <span className="text-justify ">
+              &ensp;{projects[projectNo].tech}
+            </span>
+          </p>
+          <p className="mt-1  md:line-clamp-6 text-justify">
             Details : {projects[projectNo].desc} Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Odio maiores animi vitae repellat,
             dolores omnis minima dolore optio distinctio numquam, sed suscipit
           </p>
-          <div className="flex gap-8 mt-4">
-            <button className="hover-effect spin-effect-sm relative flex gap-2 items-center justify-center rounded-full">
+          <div className="flex gap-8 mt-4 text-white">
+            <a
+              href={projects[projectNo].code}
+              className="hover-effect spin-effect-sm relative flex gap-2 items-center justify-center rounded-full"
+            >
               <p className="z-1 flex gap-2 items-center justify-center p-2 pl-3 pr-3 bg-blue-950 rounded-2xl">
                 <i>
                   <SiGithub size={20} />
                 </i>
                 Code
               </p>
-            </button>
-            <button className="hover-effect spin-effect-sm relative flex gap-2 items-center justify-center rounded-full">
+            </a>
+            <a
+              href={projects[projectNo].link}
+              className="hover-effect spin-effect-sm relative flex gap-2 items-center justify-center rounded-full"
+            >
               <p className="z-1 flex gap-2 items-center justify-center p-2 pl-3 pr-3 bg-blue-950 rounded-2xl">
                 <i>
                   <FaEye size={20} />
                 </i>
                 Live
               </p>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -165,7 +176,7 @@ export default function Projects() {
             >
               <div className="flex flex-col p-0.5 relative w-full h-full rounded-2xl hover-project cursor-pointer overflow-hidden ">
                 <Image
-                  src={project.img}  
+                  src={project.img}
                   alt={project.title}
                   width={200}
                   height={200}

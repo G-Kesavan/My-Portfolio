@@ -7,6 +7,7 @@ import {
   FaProjectDiagram,
   FaInstagram,
   FaTelegram,
+  FaGithub,
 } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 
@@ -18,30 +19,38 @@ export default function Hero() {
       className="md:max-h-screen min-h-screen p-8 pt-24 flex flex-col-reverse md:flex-row items-center justify-end md:justify-center overflow-hidden"
     >
       <div className="md:w-[50%] m-1 flex flex-col gap-4">
-        <strong className="flex md:justify-start justify-center items-center text-lg font-normal mt-3">
+        <strong className="flex md:justify-start justify-center items-center text-lg font-normal mt-5 text-yellow-100">
           WELCOME TO MY WORLD
           <i className="text-yellow-300">
             <MdStarBorder />
           </i>
         </strong>
         <h2 className="text-3xl flex font-bold items-end justify-center md:justify-start">
-          Hi,I&apos;m <span className="text-2xl font-light">&ensp;Kesavan</span>
+          Hi,I&apos;m{" "}
+          <span className="text-2xl font-normal text-shadow-[0px_0px_2px] text-shadow-blue-50">
+            &ensp;Kesavan
+          </span>
         </h2>
         <h1 className="text-4xl font-extrabold flex flex-col md:flex-row justify-center md:justify-start flex-wrap text-center">
-          <span className="mr-auto ml-auto md:mr-0 md:ml-0 text-blue-950 typing-effect max-w-fit text-shadow-[0px_0px_5px] text-shadow-blue-50">
+          <span className="mr-auto ml-auto md:mr-0 md:ml-0 text-blue-50 typing-effect max-w-fit text-shadow-[0px_0px_2px] text-shadow-blue-50">
             Fullstack
           </span>
-          <span className="mr-auto ml-auto md:mr-0 md:ml-0">Developer</span>
+          <span className="mr-auto ml-auto md:mr-0 md:ml-0 text-blue-950">
+            Developer
+          </span>
         </h1>
-        <p className="md:w-[80%] text-blue-200 flex justify-center flex-wrap h-auto">
+        <p className="md:w-[80%] flex justify-center md:text-start text-center flex-wrap h-auto">
           A passionate Fullstack developer dedicated to crafting responsive,
-          user-friendly websites that blend creativity with clean, efficient
-          code. With hands-on experience in Tailwind, TypeScripte, ReactJS,
+          user friendly websites that blend creativity with clean, efficient
+          code. With hands on experience in Tailwind, TypeScripte, ReactJS,
           Redux and NextJS, I specialize in turning ideas into dynamic digital
           experiences.
         </p>
         <div className="flex items-center justify-center md:justify-start gap-7 text-blue-200 flex-wrap mt-3 ">
-          <a href="" className="flex spin-effect-sm relative hover-effect">
+          <a
+            href="https://www.linkedin.com/in/kesavan-bca?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            className="flex spin-effect-sm relative hover-effect"
+          >
             <i className="p-2 rounded-full z-1 bg-blue-950 text-white">
               <FaLinkedin size={30} />
             </i>
@@ -49,7 +58,7 @@ export default function Hero() {
 
           <a href="" className="flex spin-effect-sm relative hover-effect">
             <i className="p-2 rounded-full z-1 bg-blue-950 text-white">
-              <FaFacebook size={30} />
+              <FaGithub size={30} />
             </i>
           </a>
           <a href="" className="flex spin-effect-sm relative hover-effect">
@@ -57,7 +66,10 @@ export default function Hero() {
               <FaInstagram size={30} />
             </i>
           </a>
-          <a href="" className="flex spin-effect-sm relative hover-effect">
+          <a
+            href="https://t.me/KESAVAN420BOY"
+            className="flex spin-effect-sm relative hover-effect"
+          >
             <i className="p-2 rounded-full z-1 bg-blue-950 text-white">
               <FaTelegram size={30} />
             </i>
@@ -65,7 +77,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="shadow-[0px_0px_15px_8px] shadow-blue-200 spin-effect-lg relative rounded-3xl h-[50vh] md:h-[60vh] lg:h-[65vh] w-auto"> 
+      <div className="shadow-[0px_0px_15px_8px] shadow-blue-200 spin-effect-lg relative rounded-3xl h-[50vh] md:h-[60vh] lg:h-[65vh] w-auto">
         <Image
           src="/images/profile.png"
           alt="profile"

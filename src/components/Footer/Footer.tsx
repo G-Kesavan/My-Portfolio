@@ -6,7 +6,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black flex flex-col md:flex-row gap-2 p-2 md:justify-around md:items-center text-amber-50">
+    <footer className="bg-black flex flex-col md:flex-row gap-2 p-2 md:justify-around md:items-center text-amber-50 mt-5">
       <ul className="flex justify-around p-2">
         <li className="p-2 hover-effect">
           <a href="#hero">Home</a>
