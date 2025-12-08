@@ -8,74 +8,82 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { useState } from "react";
-import { FaEye } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 
 export default function Projects() {
   const projects = [
     {
       title: "EMarket (MERN)",
-      tech: "Tailwind, ReactJS, Redux, ExpressJS, MongooDB",
-      desc: "Built a Netflix-like UI with ReactJS featuring dynamic content display.",
-      img: "/images/projects/Netflix.png",
-      link: "https://project-netflix-copy.web.app/",
-      code: "https://github.com/G-Kesavan/Netflix-clone",
+      tech: "Tailwind, ReactJS, Redux, NodeJs, ExpressJS, MongooDB",
+      desc: "I engineered a secure, full-stack eCommerce application using the MERN stack, Razorpay payment integration, cart and checkout features, and a responsive user interface. •	Implemented JWT authentication with login, signup, and logout functionality.  •	Added fully customized product and review management (add, update, delete) using a separate admin panel.",
+      img: "/images/projects/emarket.png",
+      link: "https://project-emarket.web.app/",
+      code: "https://github.com/G-Kesavan/ECommerce-Web-Backend",
     },
     {
       title: "Notes (MERN)",
-      tech: "Tailwind, ReactJS, ExpressJS, MongooDB",
-      desc: "Built a Netflix-like UI with ReactJS featuring dynamic content display.",
-      img: "/images/projects/Netflix.png",
-      link: "https://project-netflix-copy.web.app/",
-      code: "https://github.com/G-Kesavan/Netflix-clone",
+      tech: "Tailwind, ReactJS, ExpressJS, NodeJs MongooDB",
+      desc: "I engineered a secure, full-stack note-taking app using the MERN stack, incorporating JWT authentication, CRUD features, and a responsive user interface. Implemented JWT authentication with login, signup, and logout functionality. Added full CRUD features: create, update, delete, and manage notes. ",
+      img: "/images/projects/noteapp.png",
+      link: "https://mern-notes-project.web.app/",
+      code: "https://github.com/G-Kesavan/Notes-App-Frontend",
     },
     {
       title: "Netflix Clone (ReactJS)",
-      tech: "ReactJS, Redux, FireBase",
-      desc: "Built a Netflix-like UI with ReactJS featuring dynamic content display.",
-      img: "/images/projects/Netflix.png",
+      tech: "ReactJS, Redux, FireBase, redux",
+      desc: "Developed a Netflix clone with React.js and Redux for state management, integrating TMDB API and Firebase authentication for a seamless streaming experience.Implemented Firebase Authentication for secure sign-in/sign-out. Integrated TMDB REST API with Axios to fetch and display movies/TV shows. Designed a dynamic, responsive UI resembling the original Netflix platform ",
+      img: "/images/projects/netfilex.png",
       link: "https://project-netflix-copy.web.app/",
       code: "https://github.com/G-Kesavan/Netflix-clone",
     },
     {
       title: "Portfolio (ReactJS)",
-      tech: "ReactJS",
-      desc: "Created a responsive personal portfolio with project showcase.",
-      img: "/images/projects/Portfolio.png",
-      link: "https://mr-kesavan.web.app",
+      tech: "ReactJS, css3, javasrip, Firebase Store",
+      desc: "Created a modern, responsive portfolio website with React.js, enhanced with Three.js animations and real-time Firebase Firestore integration. Integrated Three.js for a 3D background and animated skill bars.Connected Firebase Firestore for real-time contact form submissions. Implemented React Router and additional features like copy-to-clipboard ",
+      img: "/images/projects/portfolio1.png",
+      link: "https://mr-kesavan.web.app/",
       code: "https://github.com/G-Kesavan/Portfolio",
     },
     {
       title: "To Do List (ReactJs)",
       tech: "ReactJS",
-      desc: "Developed a to-do list app with add, delete, and status toggle functions.",
-      img: "/images/projects/Notes.png",
-      link: "https://your-todo-list-link.com",
-      code: "https://github.com/G-Kesavan/React-handle",
-    },
-    {
-      title: "Landing Page (DOM)",
-      tech: "HTML, CSS",
-      desc: "Designed a static shopping page layout with modern responsive design.",
-      img: "/images/projects/empty.png",
-      link: "https://your-shopping-page-link.com",
-      code: "https://github.com/G-Kesavan/CODSOFT/tree/main/CODSOFT_Landing%20page",
+      desc: "Built a lightweight task management app in React.js with full CRUD functionality, localStorage persistence, and advanced search/filtering. Implemented full CRUD functionality with task search and completion toggles. Used localStorage for data persistence across sessions.  Designed a clean, responsive UI with interactive feedback. ",
+      img: "/images/projects/todolist.png",
+      link: "https://project-notes-copy.web.app/",
+      code: "https://github.com/G-Kesavan/To-Do-List",
     },
     {
       title: "Portfolio (DOM)",
       tech: "HTML, CSS",
-      desc: "Built a simple personal portfolio using pure HTML and CSS.",
-      img: "/images/projects/PortfolioDOM.png",
+      desc: "Built a simple personal portfolio using pure HTML and CSS. Learn basices in Styles",
+      img: "/images/projects/portfolio0.png",
       link: "https://portfolio-dom.web.app/",
       code: "https://github.com/G-Kesavan/CODSOFT/tree/main/CODSOFT_Portfolio",
     },
     {
+      title: "Landing Page (DOM)",
+      tech: "HTML, CSS",
+      desc: "Designed a static shopping page layout with modern responsive design.Learn basices in Styles",
+      img: "/images/projects/landing.png",
+      link: "none",
+      code: "https://github.com/G-Kesavan/CODSOFT/tree/main/CODSOFT_Landing",
+    },
+    {
       title: "Calculator (DOM)",
       tech: "HTML, CSS, JavaScript",
-      desc: "Built a functional calculator with basic operations using JavaScript.",
-      img: "/images/projects/empty.png",
-      link: "https://your-calculator-link.com",
+      desc: "Built a functional calculator with basic operations using JavaScript.Learn basices in Styles and javasrip functions",
+      img: "/images/projects/calculater.png",
+      link: "none",
       code: "https://github.com/G-Kesavan/CODSOFT/tree/main/CODSOFT_Calculator",
+    },
+    {
+      title: "Portfolio (NextJS)",
+      tech: "NextJS, Tailwind, shadcn Ui",
+      desc: "Created a modern, responsive portfolio website using Next.js with TypeScript, enhanced with Three.js animations and real-time email integration using Nodemailer. Integrated Three.js to implement a 3D background and animated project bars. Built and connected a custom backend for real-time contact form submissions. Implemented the App Router and additional features such as copy-to-clipboard functionality ",
+      img: "/images/projects/portfolio2.png",
+      link: "https://mrkesavan.vercel.app",
+      code: "https://github.com/G-Kesavan/My-Portfolio",
     },
   ];
 
@@ -143,12 +151,20 @@ export default function Projects() {
               </p>
             </a>
             <a
-              href={projects[projectNo].link}
+              href={
+                projects[projectNo].link === "none"
+                  ? "#project"
+                  : projects[projectNo].link
+              }
               className="hover-effect spin-effect-sm relative flex gap-2 items-center justify-center rounded-full"
             >
               <p className="z-1 flex gap-2 items-center justify-center p-2 pl-3 pr-3 bg-blue-950 rounded-2xl">
                 <i>
-                  <FaEye size={20} />
+                  {projects[projectNo].link === "none" ? (
+                    <FaEyeSlash size={20} />
+                  ) : (
+                    <FaEye size={20} />
+                  )}
                 </i>
                 Live
               </p>

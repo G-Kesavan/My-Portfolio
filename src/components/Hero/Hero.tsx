@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { MdPhone, MdStarBorder } from "react-icons/md";
 import {
-  FaFacebook,
   FaLinkedin,
   FaProjectDiagram,
   FaInstagram,
@@ -27,7 +26,7 @@ export default function Hero() {
         </strong>
         <h2 className="text-3xl flex font-bold items-end justify-center md:justify-start">
           Hi,I&apos;m{" "}
-          <span className="text-2xl font-normal text-shadow-[0px_0px_2px] text-shadow-blue-50">
+          <span className="text-2xl font-normal text-blue-200">
             &ensp;Kesavan
           </span>
         </h2>
@@ -56,12 +55,18 @@ export default function Hero() {
             </i>
           </a>
 
-          <a href="" className="flex spin-effect-sm relative hover-effect">
+          <a
+            href="https://github.com/G-Kesavan/"
+            className="flex spin-effect-sm relative hover-effect"
+          >
             <i className="p-2 rounded-full z-1 bg-blue-950 text-white">
               <FaGithub size={30} />
             </i>
           </a>
-          <a href="" className="flex spin-effect-sm relative hover-effect">
+          <a
+            href="https://www.instagram.com/mr.kesavaperumal?igsh=MXU0YXgwajNqeDNlMA=="
+            className="flex spin-effect-sm relative hover-effect"
+          >
             <i className="p-2 rounded-full z-1 bg-blue-950 text-white">
               <FaInstagram size={30} />
             </i>
@@ -108,7 +113,7 @@ export default function Hero() {
             <i>
               <FaProjectDiagram size={16} />
             </i>
-            <span className="text-[17px]">Projects 8</span>
+            <span className="text-[17px]">Projects 10</span>
           </button>
         </div>
       </div>
