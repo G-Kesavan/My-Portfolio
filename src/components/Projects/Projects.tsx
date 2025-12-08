@@ -134,9 +134,7 @@ export default function Projects() {
             </span>
           </p>
           <p className="mt-1  md:line-clamp-6 text-justify">
-            Details : {projects[projectNo].desc} Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Odio maiores animi vitae repellat,
-            dolores omnis minima dolore optio distinctio numquam, sed suscipit
+            Details : {projects[projectNo].desc} 
           </p>
           <div className="flex gap-8 mt-4 text-white">
             <a
