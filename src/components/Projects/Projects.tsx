@@ -16,7 +16,7 @@ export default function Projects() {
     {
       title: "EMarket (MERN)",
       tech: "Tailwind, ReactJS, Redux, NodeJs, ExpressJS, MongooDB",
-      desc: "I engineered a secure, full-stack eCommerce application using the MERN stack, Razorpay payment integration, cart and checkout features, and a responsive user interface. •	Implemented JWT authentication with login, signup, and logout functionality.  •	Added fully customized product and review management (add, update, delete) using a separate admin panel.",
+      desc: "I engineered a secure, full-stack eCommerce application using the MERN stack, Razorpay payment integration, cart and checkout features, and a responsive user interface. Implemented JWT authentication with login, signup, and logout functionality. Added fully customized product and review management (add, update, delete) using a separate admin panel.",
       img: "/images/projects/emarket.png",
       link: "https://project-emarket.web.app/",
       code: "https://github.com/G-Kesavan/ECommerce-Web-Backend",
