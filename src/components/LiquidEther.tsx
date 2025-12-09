@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable react-hooks/unsupported-syntax */
+/* eslint-disable */
+
 "use client";
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
@@ -17,7 +16,7 @@ export interface LiquidEtherProps {
   resolution?: number;
   isBounce?: boolean;
   colors?: string[];
-  style?: React.CSSProperties;  
+  style?: React.CSSProperties;
   className?: string;
   autoDemo?: boolean;
   autoSpeed?: number;
@@ -63,11 +62,11 @@ export default function LiquidEther({
   cursorSize = 100,
   isViscous = false,
   viscous = 30,
-  iterationsViscous = 32,
-  iterationsPoisson = 32,
+  iterationsViscous = 10,
+  iterationsPoisson = 10,
   dt = 0.014,
-  BFECC = true,
-  resolution = 0.5,
+  BFECC = false,
+  resolution = 0.25,
   isBounce = false,
   colors = defaultColors,
   style = {},

@@ -34,8 +34,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
-, "src/components/ui/LiquidEther.js"  ],
+    "**/*.mts",
+    "src/components/ui/LiquidEther.js"
+  ],
   "exclude": [
     "node_modules"
   ]

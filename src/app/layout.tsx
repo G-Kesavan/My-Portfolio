@@ -10,16 +10,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="relative min-h-screen">
-        <div style={{ width: "100%", height: "100%", position: "fixed", zIndex: -1}}>
+        <div className="h-full w-full fixed -z-1">
           <LiquidEther
             colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
             mouseForce={20}
-            cursorSize={100}
+            cursorSize={80}
             isViscous={false}
             viscous={30}
-            iterationsViscous={32}
-            iterationsPoisson={32}
-            resolution={0.5}
+            iterationsViscous={22}
+            iterationsPoisson={22}
+            resolution={0.35}
             isBounce={false}
             autoDemo={true}
             autoSpeed={0.5}
@@ -27,6 +27,7 @@ export default function RootLayout({
             takeoverDuration={0.25}
             autoResumeDelay={3000}
             autoRampDuration={0.6}
+            BFECC={false}
           />
         </div>
         {children}

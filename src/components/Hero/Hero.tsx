@@ -86,8 +86,9 @@ export default function Hero() {
         <Image
           src="/images/profile.png"
           alt="profile"
-          width={500}
+          width={300}
           height={500}
+          priority
           loading="eager"
           className="h-full w-auto profile-img rounded-3xl"
         />
