@@ -19,7 +19,7 @@ export default function Projects() {
       desc: "I engineered a secure, full-stack eCommerce application using the MERN stack, Razorpay payment integration, cart and checkout features, and a responsive user interface. Implemented JWT authentication with login, signup, and logout functionality. Added fully customized product and review management (add, update, delete) using a separate admin panel.",
       img: "/images/projects/emarket.png",
       link: "https://project-emarket.web.app/",
-      code: "https://github.com/G-Kesavan/ECommerce-Web-Backend",
+      code: "https://github.com/G-Kesavan/ecommerce_web_backend",
     },
     {
       title: "Notes (MERN)",
@@ -27,7 +27,7 @@ export default function Projects() {
       desc: "I engineered a secure, full-stack note-taking app using the MERN stack, incorporating JWT authentication, CRUD features, and a responsive user interface. Implemented JWT authentication with login, signup, and logout functionality. Added full CRUD features: create, update, delete, and manage notes. ",
       img: "/images/projects/noteapp.png",
       link: "https://mern-notes-project.web.app/",
-      code: "https://github.com/G-Kesavan/Notes-App-Frontend",
+      code: "https://github.com/G-Kesavan/notes_web_frontend",
     },
     {
       title: "Netflix Clone (ReactJS)",
@@ -35,7 +35,7 @@ export default function Projects() {
       desc: "Developed a Netflix clone with React.js and Redux for state management, integrating TMDB API and Firebase authentication for a seamless streaming experience.Implemented Firebase Authentication for secure sign-in/sign-out. Integrated TMDB REST API with Axios to fetch and display movies/TV shows. Designed a dynamic, responsive UI resembling the original Netflix platform ",
       img: "/images/projects/netfilex.png",
       link: "https://project-netflix-copy.web.app/",
-      code: "https://github.com/G-Kesavan/Netflix-clone",
+      code: "https://github.com/G-Kesavan/netflix_clone",
     },
     {
       title: "Portfolio (ReactJS)",
@@ -43,7 +43,7 @@ export default function Projects() {
       desc: "Created a modern, responsive portfolio website with React.js, enhanced with Three.js animations and real-time Firebase Firestore integration. Integrated Three.js for a 3D background and animated skill bars.Connected Firebase Firestore for real-time contact form submissions. Implemented React Router and additional features like copy-to-clipboard ",
       img: "/images/projects/portfolio1.png",
       link: "https://mr-kesavan.web.app/",
-      code: "https://github.com/G-Kesavan/Portfolio",
+      code: "https://github.com/G-Kesavan/portfolio_reactjs",
     },
     {
       title: "To Do List (ReactJs)",
@@ -51,7 +51,7 @@ export default function Projects() {
       desc: "Built a lightweight task management app in React.js with full CRUD functionality, localStorage persistence, and advanced search/filtering. Implemented full CRUD functionality with task search and completion toggles. Used localStorage for data persistence across sessions.  Designed a clean, responsive UI with interactive feedback. ",
       img: "/images/projects/todolist.png",
       link: "https://project-notes-copy.web.app/",
-      code: "https://github.com/G-Kesavan/To-Do-List",
+      code: "https://github.com/G-Kesavan/to-do-list",
     },
     {
       title: "Portfolio (DOM)",
@@ -59,7 +59,7 @@ export default function Projects() {
       desc: "Built a simple personal portfolio using pure HTML and CSS. Learn basices in Styles",
       img: "/images/projects/portfolio0.png",
       link: "https://portfolio-dom.web.app/",
-      code: "https://github.com/G-Kesavan/CODSOFT/tree/main/CODSOFT_Portfolio",
+      code: "https://github.com/G-Kesavan/portfolio_dom",
     },
     {
       title: "Landing Page (DOM)",
@@ -67,7 +67,7 @@ export default function Projects() {
       desc: "Designed a static shopping page layout with modern responsive design.Learn basices in Styles",
       img: "/images/projects/landing.png",
       link: "none",
-      code: "https://github.com/G-Kesavan/CODSOFT/tree/main/CODSOFT_Landing",
+      code: "https://github.com/G-Kesavan/landing_dom",
     },
     {
       title: "Calculator (DOM)",
@@ -75,7 +75,7 @@ export default function Projects() {
       desc: "Built a functional calculator with basic operations using JavaScript.Learn basices in Styles and javasrip functions",
       img: "/images/projects/calculater.png",
       link: "none",
-      code: "https://github.com/G-Kesavan/CODSOFT/tree/main/CODSOFT_Calculator",
+      code: "https://github.com/G-Kesavan/calculator_dom",
     },
     {
       title: "Portfolio (NextJS)",
@@ -83,7 +83,7 @@ export default function Projects() {
       desc: "Created a modern, responsive portfolio website using Next.js with TypeScript, enhanced with Three.js animations and real-time email integration using Nodemailer. Integrated Three.js to implement a 3D background and animated project bars. Built and connected a custom backend for real-time contact form submissions. Implemented the App Router and additional features such as copy-to-clipboard functionality ",
       img: "/images/projects/portfolio2.png",
       link: "https://mrkesavan.vercel.app",
-      code: "https://github.com/G-Kesavan/My-Portfolio",
+      code: "https://github.com/G-Kesavan/portfolio_nextjs",
     },
   ];
 
